@@ -33,7 +33,7 @@ body {
   } */
 
 .navbar {
-    background: #fb8900;
+    background: linear-gradient(#fb8900, white);
 }
 .navbar-nav {
     float: none;
@@ -85,3 +85,17 @@ a:hover {
     font-size: 20%;
     color: orange
 }
+
+.map-container-3{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-3 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
