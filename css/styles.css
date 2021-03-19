@@ -6,7 +6,7 @@
     background-size: cover;
     background-position: 100% 40%;
     /* linear-gradient(to right, #5637DD, #3046C5, #60106B); */
-    color: black;
+    /* color: black; */
 }
 
 .site-footer {
@@ -33,7 +33,9 @@ body {
   } */
 
 .navbar {
-    background: linear-gradient(#fb8900, white);
+    background: #fb8900;
+    text-align: center;
+    width: 100%;
 }
 .navbar-nav {
     float: none;
@@ -86,16 +88,50 @@ a:hover {
     color: orange
 }
 
-.map-container-3{
+.map-container{
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
     }
-    .map-container-3 iframe{
+    .map-container iframe{
     left:0;
     top:0;
     height:100%;
     width:100%;
     position:absolute;
     }
+
+.parallax {
+    /* The image used */
+    background-image: url("/img/waffle_latte.jpg");
+    
+    /* Set a specific height */
+    min-height: 500px; 
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+.carousel {
+    border: solid $color-secondary;
+}
+
+#carouselButton {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+/* .img-fluid {
+max-width: 100%;
+height: auto;
+} */

@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>The Cafe</title>
+    <title>Cozy Cafe</title>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
     <header class="jumbotron jumbotron-fluid">
-        <div class="wrap">
-            <div class="title-area">
-                <h1 class="site-title" itemprop="headline">
-                    <a href="index.html">The Cafe</a>
-                </h1>
-
-            </div>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <a href="index.html"><img src="img/cozylogo.jpg" class="img-fluid" /></a>
+                </div>
+                <div class="col">
+                    <h1>Cozy Cafe</h1>
+                </div>
         <!-- <h2>Sit down and relax</h2> -->
         <!-- <div class="container">
             <div class="row"> -->
@@ -44,15 +44,15 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/logo5.jpg" height="30" width="30" /></a>
+            <!-- <a class="navbar-brand" href="index.html"><img src="img/logo5.jpg" height="30" width="30" /></a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cafeNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="cafeNavbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html"><i class="fa fa-coffee fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-coffee fa-lg"></i> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-bars fa-lg"></i> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe fa-lg"></i> Location</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-globe fa-lg"></i> Hours and Location</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
                 <!-- <span class="navbar-text ml-auto">
@@ -63,6 +63,28 @@
             </div>
         </div>
     </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Hours & Location</li>
+                </ol>
+                <h2 class="text-center">Hours & Location</h2>
+                <p class="text-center">123 Cozy Cafe Street</p>
+                <p class="text-center">Manhattan, NY 10021</p>
+                <hr />
+                <p class="text-center">Monday - Friday</p>
+                <p class="text-center">6am - 9pm</p>
+                <p class="text-center">Saturday</p>
+                <p class="text-center">8am - 9pm</p>
+                <p class="text-center">Sunday</p>
+                <p class="text-center">8am - 5pm</p>
+                <hr />
+
+            </div>
+        </div>
 
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
@@ -100,11 +122,12 @@
             </div>
         </div>
     </div>
-    <p>Test</p>
-    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-        <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-          style="border:0" allowfullscreen></iframe>
-      </div>
+    
+    <div id="map-container-google" class="z-depth-1-half map-container text-center" style="height: auto">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24172.766166044716!2d-73.97619204075812!3d40.77091467681705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589316581e9b%3A0xf338029550e7c236!2sNew%20York%2C%20NY%2010021!5e0!3m2!1sen!2sus!4v1616096602530!5m2!1sen!2sus" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        <!-- <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+          style="border:0" allowfullscreen></iframe> -->
+    </div>
 
     <footer class="site-footer mt-auto">
         <div class="container">
